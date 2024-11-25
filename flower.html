@@ -8,26 +8,10 @@
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>Flowers</title>
     <style>
-        /* General reset for body and margin */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Ensure the page takes the full viewport size */
-        .container {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-
         /* Typewriter effect styles */
         .typewriter {
             font-family: "Courier New", Courier, monospace;
-            font-size: 3vw; /* Responsive font size based on viewport width */
+            font-size: 24px;
             color: #fff;
             display: inline-block;
             white-space: nowrap;
@@ -46,45 +30,6 @@
         /* Blinking cursor effect */
         @keyframes blink-caret {
             50% { border-color: transparent; }
-        }
-
-        /* Adjust for flower animation */
-        .flowers {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100%;
-        }
-
-        /* Media Queries for Responsiveness */
-        @media (max-width: 768px) {
-            .typewriter {
-                font-size: 5vw; /* Larger font for mobile screens */
-            }
-
-            .flowers {
-                width: 100%;
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
-
-        /* For mobile */
-        @media (max-width: 480px) {
-            .typewriter {
-                font-size: 6vw; /* Even larger font on very small screens */
-            }
-
-            .flowers {
-                width: 100%;
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-            }
         }
     </style>
 </head>
