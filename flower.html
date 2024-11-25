@@ -6,32 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
-    <title>Flowers</title>
-    <style>
-        /* Typewriter effect styles */
-        .typewriter {
-            font-family: "Courier New", Courier, monospace;
-            font-size: 24px;
-            color: #fff;
-            display: inline-block;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 4px solid #fff;
-            width: 0;
-            animation: typing 4s steps(40) 1s forwards, blink-caret 0.75s step-end infinite;
-        }
-
-        /* Animation to simulate typing effect */
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-
-        /* Blinking cursor effect */
-        @keyframes blink-caret {
-            50% { border-color: transparent; }
-        }
-    </style>
+    <title>flowers</title>
 </head>
 <body class="container">
   <!-- Pembuat code: https://codepen.io/mdusmanansari/pen/BamepLe -->
@@ -333,30 +308,5 @@
       </div>
     </div>
     <script src="main.js"></script>
-
-  <script>
-    // Typewriter effect for the text
-    var text = "Welcome to the Flower Garden! Enjoy the music and animation!";
-    var index = 0;
-    var speed = 100; // speed of typing (in ms)
-
-    function typeWriter() {
-      if (index < text.length) {
-        document.getElementById("typewriter-text").innerHTML += text.charAt(index);
-        index++;
-        setTimeout(typeWriter, speed);
-      }
-    }
-
-    // Start the typewriter effect when the page is loaded
-    window.onload = function() {
-      // Play background music automatically
-      var audio = document.getElementById("background-music");
-      audio.play();
-
-      // Start typewriter effect
-      typeWriter();
-    };
-  </script>
-</body>
+  </body>
 </html>
